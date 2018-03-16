@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Qure.js</title>
+
+<meta property='og:locale' content='sv_SE'/>
+<meta property='og:type' content='website'/>
+<meta property='og:title' content='QureJS'/>
+<meta property='og:description' content=''/>
+<meta property='og:url' content='http://www.qurejs.com/'/>
+<meta property='og:site_name' content='Qure.js'/>
+<meta property='fb:admins' content='661407089'/>
+<meta property='og:image' content='http://www.qurejs.com/res/img/fb-icon.png'/>
+
+<link type="text/css" href="./res/css/style.min.css" media="all" rel="stylesheet"/>
+<script type="text/javascript" src="./res/js/site.min.js"></script>
+</head>
+<body>
+
+<nav>
+	<ul>
+		<li>
+			<a class="nolink" href="/goto/overview/">
+				<figure class="icon-Qure.js"></figure>
+				<span>Overview</span>
+			</a>
+			<ul class="submenu">
+				<li><a class="nolink" href="/goto/templating/">Templating</a></li>
+			</ul>
+		</li>
+		<li>
+			<a target="_new" href="https://github.com/hbi99/qure.js">
+				<figure class="icon-github"></figure>
+				<span>Source</span>
+			</a>
+			<ul class="submenu">
+				<li><a target="_new" href="https://raw.github.com/hbi99/qure.js/master/dist/qure.min.js">Download</a></li>
+				<li><a target="_new" href="https://github.com/hbi99/qure.js">Fork me on GitHub</a></li>
+			</ul>
+		</li>
+		<li>
+			<a class="nolink" href="/goto/about/">
+				<figure class="icon-hb"></figure>
+				<span>About</span>
+			</a>
+		</li>
+	</ul>
+</nav>
+
+<section class="layout">
+	<div class="cover"></div>
+	<div class="content" data-section="overview">
+
+		<!-- Intro -->
+		<div class="intro">
+			<h1>Qure.js</h1>
+			<p>
+				Javascript today is rather easy but the outline of a large codebase needs to become easier
+				to comprihend for the programmer - especielly when dealing with asynchronous
+				code and this is what <b>Qure.js</b> is introducing.
+			</p>
+			
+			<a class="link-left" target="_new" href="https://github.com/hbi99/qure.js">
+				View Source on GitHub
+				<figure class="icon-github"></figure>
+			</a>
+			<a class="link-right" target="_new" href="https://raw.github.com/hbi99/qure.js/master/dist/defiant-latest.min.js">
+				Download Qure.js
+				<figure class="icon-download"></figure>
+			</a>
+		</div>
+		
+		<!-- sticky -->
+		<hr/>
+
+		<!-- Overview -->
+		<h2>Overview</h2>
+		<p>
+			<strong>Javascript</strong> - being one of the most popular programming languages, has a lot of advantages but
+			it comes with a few drawbacks as well. Among its merits; it is fairly easy to learn and one can
+			write javascript code with minimal programming background.
+		</p>
+		<p>
+			The problems arises when the programmer starts to nibbling areas such as asynchronous code -
+			especially in context of <a href="https://nodejs.org/en/" target="_new">Node.js</a>.
+			Concurrency becomes a big issue since there is no way to tell when a certain process finishes.
+			This problem has been addressed by writing nested functions but very quickly, the development
+			community recognized that this might not the optimal solution.
+			Enter <a href="https://en.wikipedia.org/wiki/Futures_and_promises" target="_new">futures and promises</a> -
+			theoretically an elegant solution but in practice it comes with drawbacks; above all the concept is
+			hard to digest for many.
+		</p>
+		<p>
+			What's even more problematic is that developers have trouble understand, follow or debug large
+			codebase written by colleagues or even code by him-/herself a few months later, if asynchronous
+			programming is involved - <i>which is very common</i>.
+			<br/>
+			<br/>
+		</p>
+		
+		<!-- Solution -->
+		<div class="gist-code type-javascript">
+			<script src="https://gist.github.com/hbi99/ce924e0f181c3d1da91d4b0c4df5818b.js"></script>
+		</div>
+		<h2>Solution</h2>
+		<p>
+			The example code above might seem ridiculously simple but it gives you the basic idea with Qure.js.
+		</p>
+
+		<hr/>
+
+		<footer data-section="about">
+			<p>
+				<strong>Qure.js</strong> was developed by <a href="mailto:hbi@longscript.com">Hakan Bilgin</a> <strong>&copy; 2013-2018</strong><br/>
+				<figure class="icon-hb"></figure>
+			</p>
+		</footer>
+
+	</div>
+</section>
+
+</body>
+</html>
